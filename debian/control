@@ -1,0 +1,14 @@
+Source: sbs-hyphenation-tables
+Section: text
+Priority: optional
+Maintainer: Bert Frees <bert.frees@sbs.ch>
+Standards-Version: 3.9.2
+Build-Depends: debhelper (>= 8)
+
+Package: sbs-hyphenation-tables
+Architecture: all
+Section: text
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Replaces: hyphen-de
+Description: German yphenation tables for SBS
+

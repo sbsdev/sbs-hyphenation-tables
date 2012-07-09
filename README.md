@@ -16,3 +16,7 @@ This will install the following hyphenation tables into /usr/share/hyphen:
    - enhanced with a list of exception words (whitelist_de.txt, whitelist_de_SBS.txt)
  * hyph_de_DE_OLDSPELL: table for old German spelling
 
+Create Debian package
+---------------------
+
+`debuild -us -uc`
