@@ -9,6 +9,6 @@ Package: sbs-hyphenation-tables
 Architecture: all
 Section: text
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Replaces: hyphen-de
+Replaces: openoffice.org-hyphenation-de, hyphen-de
 Description: German yphenation tables for SBS
 
