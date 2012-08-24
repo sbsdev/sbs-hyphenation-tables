@@ -6,8 +6,8 @@ German hyphenation tables used by SBS
 Install
 -------
 
-`make`
-`sudo make install`
+ * `make`
+ * `sudo make install`
 
 This will install the following hyphenation tables into /usr/share/hyphen:
 
