@@ -10,5 +10,5 @@ Architecture: all
 Section: text
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Replaces: openoffice.org-hyphenation-de, hyphen-de
-Description: German yphenation tables for SBS
+Description: German hyphenation tables for SBS
 

@@ -1,5 +1,11 @@
+sbs-hyphenation-tables (1.1-1) oneiric; urgency=low
+
+  * Updated whitelist.
+
+ -- Bert Frees <frees@woolaver>  Thu, 27 Sep 2012 10:05:40 +0200
+
 sbs-hyphenation-tables (1.0-1) UNRELEASED; urgency=low
 
-  * Initial release. (Closes: #XXXXXX)
+  * Initial release.
 
  -- Bert Frees <frees@woolaver>  Fri, 06 Jul 2012 16:39:48 +0200
