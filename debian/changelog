@@ -1,3 +1,10 @@
+sbs-hyphenation-tables (1.5-1) unstable; urgency=low
+
+  * Updated whitelist
+  * Added whitelist for old spelling
+
+ -- Bert Frees <frees@woolaver>  Fri, 25 Jan 2013 10:05:01 +0100
+
 sbs-hyphenation-tables (1.4-1) unstable; urgency=low
 
   * Fixed a unicode problem in the ditionary generation
