@@ -1,6 +1,8 @@
 whitelist_de_SBS.dic
 whitelist_de.dic
+whitelist_de_OLDSPELL.dic
 hyph_de_DE.dic
+hyph_de_OLDSPELL.dic
 debian/sbs-hyphenation-tables
 debian/sbs-hyphenation-tables.debhelper.log
 debian/sbs-hyphenation-tables.substvars
