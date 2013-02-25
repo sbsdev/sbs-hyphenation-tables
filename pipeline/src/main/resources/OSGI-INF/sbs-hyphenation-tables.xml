@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" name="SBS Hyhenation Tables" activate="activate">
+    <scr:implementation class="org.daisy.pipeline.braille.libhyphen.LibhyphenTablePath"/>
+    <scr:service>
+        <scr:provide interface="org.daisy.pipeline.braille.libhyphen.LibhyphenTablePath"/>
+    </scr:service>
+    <scr:property name="identifier" type="String" value="http://www.sbs.ch/pipeline/modules/braille/hyphen/"/>
+    <scr:property name="path" type="String" value="/hyphen"/>
+    <scr:property name="manifest" type="String" value="/manifest.xml"/>
+</scr:component>
