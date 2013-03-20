@@ -1,3 +1,9 @@
+sbs-hyphenation-tables (1.7-1) unstable; urgency=low
+
+  * Add list of 57000 exception words
+
+ -- Bert Frees <frees@woolaver>  Wed, 20 Mar 2013 16:48:29 +0100
+
 sbs-hyphenation-tables (1.6-1) unstable; urgency=low
 
   * Updated whitelist

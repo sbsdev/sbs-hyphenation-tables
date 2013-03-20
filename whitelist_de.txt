@@ -3,7 +3,6 @@ abend-rö-te
 ab-ga-sen
 abi-tur
 ab-schlies-sen
-ab-s-trak-ter
 ab-zu-tau-chen
 adels-spross
 adels-spros-se
@@ -192,8 +191,6 @@ heul-at-ta-cke
 he-xen-schlund
 hinkt
 hoch-ebe-ne
-hoch-ge-reckt
-hoch-ge-reck-ten
 hoch-haus-dach
 hof-rat
 hof-rä-te
