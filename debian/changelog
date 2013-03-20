@@ -1,3 +1,9 @@
+sbs-hyphenation-tables (1.6-1) unstable; urgency=low
+
+  * Updated whitelist
+
+ -- Bert Frees <frees@woolaver>  Wed, 20 Mar 2013 14:16:26 +0100
+
 sbs-hyphenation-tables (1.5-1) unstable; urgency=low
 
   * Updated whitelist
