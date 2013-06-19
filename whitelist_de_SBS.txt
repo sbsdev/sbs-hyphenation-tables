@@ -1602,6 +1602,7 @@ al-lu-vi-a-ler
 al-lu-vi-a-les
 all-zweck-ab-rol-ler
 alm-ab-trieb
+al-mo-do-var
 alp-drü-cken
 al-pen-glöck-chen
 al-pen-re-pu-b-lik
@@ -27386,6 +27387,7 @@ ka-nal-si-g-na-li-sie-rung
 ka-nal-steu-e-rung
 ka-nal-such-tas-te
 ka-nal-um-set-zer
+kan-din-s-ky
 kan-dis-zu-ckers
 kän-gu-ru-sprün-ge
 kän-gu-ru-sprün-gen
@@ -27468,6 +27470,7 @@ ka-p-ri-zi-ö-ses-tes
 kap-sel-ent-fer-nung
 ka-putt-zu-ma-chen
 ka-pu-zen-pul-l-o-ver
+ka-pu-zen-shirt
 ka-pu-zi-ner-af-fe
 kap-ver-di-er
 kar-bo-na-ro
@@ -33233,6 +33236,7 @@ meist-un-ter-schätz-ter
 meist-un-ter-schätz-tes
 me-la-n-ä-mie
 me-lanch-thon
+melch-thal
 mel-de-ad-res-se
 mel-de-si-g-nal
 me-li-o-ra-ti-on
@@ -40497,6 +40501,7 @@ pu-ten-steak
 pu-ten-steaks
 putz-ei-mern
 putz-ei-mers
+puz-zle
 pyk-ni-ker
 pyk-nisch
 pyk-ni-sche
@@ -43720,6 +43725,7 @@ schneid-steu-e-rung
 schneid-wa-ren-in-dus-t-rie
 schneid-zy-k-len
 schneid-zy-k-lus
+schnein
 schnell-an-sicht
 schnell-ant-wort
 schnell-bahn-sta-ti-o-nen
@@ -45394,6 +45400,7 @@ skor-pi-on-fi-sche
 skor-pi-on-fi-schen
 skript-au-tor
 sky-lab
+skype
 slang-lie-bend
 slashes
 slip-ein-la-ge
