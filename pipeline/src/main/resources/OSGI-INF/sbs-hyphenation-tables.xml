@@ -4,7 +4,7 @@
     <scr:service>
         <scr:provide interface="org.daisy.pipeline.braille.libhyphen.LibhyphenTablePath"/>
     </scr:service>
-    <scr:property name="identifier" type="String" value="http://www.sbs.ch/pipeline/modules/braille/hyphen/"/>
+    <scr:property name="identifier" type="String" value="http://www.sbs.ch/pipeline/modules/hyphen/"/>
     <scr:property name="path" type="String" value="/hyphen"/>
     <scr:property name="manifest" type="String" value="/manifest.xml"/>
 </scr:component>
