@@ -14437,6 +14437,7 @@ füh-rungs-or-ga-ni-sa-ti-o-nen
 füh-rungs-po-si-ti-o-nen
 füh-rungs-pro-b-le-me
 füh-rungs-zen-t-rum
+fu-ku-shi-ma
 ful-da-er
 fül-ler-tin-te
 füll-stand-an-zei-ger
@@ -16015,6 +16016,7 @@ ge-trei-de-sor-ten
 ge-trei-de-spros-sen
 ge-trie-be-schä-den
 ge-trie-be-sei-tig
+ge-twit-tert
 ge-ulkt
 ge-walt-akt
 ge-walt-ak-te
@@ -26980,6 +26982,7 @@ jo-vi-a-len
 jo-vi-a-ler
 jo-vi-a-les
 jo-vi-a-li-tät
+joyce
 ju-a-na
 ju-bel-chö-re
 ju-bel-chö-ren
@@ -48204,6 +48207,7 @@ su-per-re-vi-si-on
 su-per-rie-sen-sla-lom
 su-per-rol-le
 su-per-scoop
+su-per-sho-cking
 su-per-spe-zi-a-li-siert
 su-per-spe-zi-a-li-sier-te
 su-per-spe-zi-a-li-sier-tem
@@ -49514,6 +49518,7 @@ to-le-ra-b-lem
 to-le-ra-b-len
 to-le-ra-b-ler
 to-le-ra-b-les
+to-le-rance
 to-le-ranz-wert
 to-ma-ten-ketsch-up
 to-ma-ten-ketsch-ups
@@ -50499,6 +50504,7 @@ um-bruch-si-tu-a-ti-on
 um-bruch-si-tu-a-ti-o-nen
 um-drü-cke
 um-drü-cken
+umeå
 um-ei-n-an-der
 um-ei-n-an-der-wi-ckeln
 um-fass-ter

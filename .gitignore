@@ -6,6 +6,7 @@ hyph_de_OLDSPELL.dic
 debian/sbs-hyphenation-tables
 debian/sbs-hyphenation-tables.debhelper.log
 debian/sbs-hyphenation-tables.substvars
+debian/files
 
 # Maven
 target/
