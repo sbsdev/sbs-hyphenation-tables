@@ -13,4 +13,4 @@ clean:
 	rm -f hyph_de_DE.dic hyph_de_OLDSPELL.dic whitelist_de_SBS.dic whitelist_de.dic whitelist_de_OLDSPELL.dic
 
 install: hyph_de_DE.dic hyph_de_OLDSPELL.dic
-	install $^ $(DESTDIR)/usr/share/hyphen
+	install -m 644 $^ $(DESTDIR)/usr/share/hyphen

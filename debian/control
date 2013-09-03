@@ -2,7 +2,7 @@ Source: sbs-hyphenation-tables
 Section: text
 Priority: optional
 Maintainer: Bert Frees <bert.frees@sbs.ch>
-Standards-Version: 3.9.2
+Standards-Version: 3.9.4
 Build-Depends: debhelper (>= 8)
 
 Package: sbs-hyphenation-tables
