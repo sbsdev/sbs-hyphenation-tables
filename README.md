@@ -19,4 +19,4 @@ This will install the following hyphenation tables into /usr/share/hyphen:
 Create Debian package
 ---------------------
 
-`debuild -us -uc`
+`debuild -us -uc -i -I`

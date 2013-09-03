@@ -14,32 +14,32 @@ sbs-hyphenation-tables (1.9-1) unstable; urgency=low
 
   * Update whitelist
 
- -- Bert Frees <frees@woolaver>  Wed, 19 Jun 2013 09:12:09 +0200
+ -- Bert Frees <bert.frees@sbs.ch>  Wed, 19 Jun 2013 09:12:09 +0200
 
 sbs-hyphenation-tables (1.8-1) unstable; urgency=low
 
   * Update whitelist
 
- -- Bert Frees <frees@woolaver>  Thu, 25 Apr 2013 16:04:39 +0200
+ -- Bert Frees <bert.frees@sbs.ch>  Thu, 25 Apr 2013 16:04:39 +0200
 
 sbs-hyphenation-tables (1.7-1) unstable; urgency=low
 
   * Add list of 57000 exception words
 
- -- Bert Frees <frees@woolaver>  Wed, 20 Mar 2013 16:48:29 +0100
+ -- Bert Frees <bert.frees@sbs.ch>  Wed, 20 Mar 2013 16:48:29 +0100
 
 sbs-hyphenation-tables (1.6-1) unstable; urgency=low
 
   * Updated whitelist
 
- -- Bert Frees <frees@woolaver>  Wed, 20 Mar 2013 14:16:26 +0100
+ -- Bert Frees <bert.frees@sbs.ch>  Wed, 20 Mar 2013 14:16:26 +0100
 
 sbs-hyphenation-tables (1.5-1) unstable; urgency=low
 
   * Updated whitelist
   * Added whitelist for old spelling
 
- -- Bert Frees <frees@woolaver>  Fri, 25 Jan 2013 10:05:01 +0100
+ -- Bert Frees <bert.frees@sbs.ch>  Fri, 25 Jan 2013 10:05:01 +0100
 
 sbs-hyphenation-tables (1.4-1) unstable; urgency=low
 
@@ -51,19 +51,19 @@ sbs-hyphenation-tables (1.3-1) unstable; urgency=low
 
   * Updated whitelist
 
- -- Bert Frees <frees@woolaver>  Tue, 20 Nov 2012 14:13:38 +0100
+ -- Bert Frees <bert.frees@sbs.ch>  Tue, 20 Nov 2012 14:13:38 +0100
 
 sbs-hyphenation-tables (1.2-1) unstable; urgency=low
 
   * Updated whitelist
 
- -- Bert Frees <frees@woolaver>  Fri, 19 Oct 2012 11:23:41 +0200
+ -- Bert Frees <bert.frees@sbs.ch>  Fri, 19 Oct 2012 11:23:41 +0200
 
 sbs-hyphenation-tables (1.1-1) oneiric; urgency=low
 
   * Updated whitelist.
 
- -- Bert Frees <frees@woolaver>  Thu, 27 Sep 2012 10:05:40 +0200
+ -- Bert Frees <bert.frees@sbs.ch>  Thu, 27 Sep 2012 10:05:40 +0200
 
 sbs-hyphenation-tables (1.0-1) UNRELEASED; urgency=low
 
