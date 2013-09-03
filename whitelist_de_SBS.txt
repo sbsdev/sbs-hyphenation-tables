@@ -1,3 +1,4 @@
+'cause
 aal-ar-tig
 aal-ar-ti-ge
 aal-ar-ti-gem
@@ -1781,6 +1782,7 @@ alt-sa-xo-phon
 alt-so-lo
 alt-spa-rer-ge-setz
 alt-spar-gut-ha-ben
+alt-stet-ten
 alt-stoff-samm-lung
 alu-fel-ge
 alu-fel-gen
@@ -2292,6 +2294,7 @@ an-mach-holz
 an-meld-e-in-for-ma-ti-o-nen
 an-mel-de-na-me
 an-mel-de-vor-dru-ckes
+an-na-burg
 an-nag-le
 an-ne-ma-ries
 an-ne-xi-o-nen
@@ -6098,6 +6101,7 @@ bohr-an-trieb
 bohr-an-triebs
 bohr-emul-si-on
 bohr-scha-b-lo-ne
+bo-la-fjall
 bo-li-vi-a-ner
 bo-li-vi-a-ne-rin
 bo-li-vi-a-nern
@@ -6467,6 +6471,8 @@ brumm-bäs-sen
 brum-mi-streik
 bru-nelle
 brunft-ruf
+brun-tal
+brun-ta-ler
 brust-am-pu-ta-ti-on
 brust-am-pu-tiert
 brust-am-pu-tier-te
@@ -6825,6 +6831,7 @@ ca-ro-ti-no-i-den
 car-te-si-a-ni-sche
 car-te-si-a-nis-mus
 car-ti-er
+cart-wright
 ca-sa-blan-ca
 ca-sa-blan-cas
 cash-flow
@@ -6965,6 +6972,8 @@ clip-arts
 clip-va-ri-a-b-le
 clip-va-ri-a-b-len
 cli-quen-un-we-sen
+clive
+clives
 clo-chard
 clo-chards
 clown-fisch
@@ -7895,6 +7904,7 @@ des-il-lu-si-o-nie-rung
 des-in-for-ma-ti-o-nen
 des-in-te-g-ra-ti-on
 des-in-te-g-rie-ren
+de-sire
 de-skrip-ti-o-nen
 desk-top
 desk-top-pu-b-lis-hing
@@ -8953,6 +8963,7 @@ don-ners-tag-nach-mit-tag
 don-ners-tag-nach-mit-tage
 don-ners-tag-nach-mit-tagen
 don-ners-tag-nach-mit-tags
+dope
 do-ping-af-fä-re
 do-ping-af-fä-ren
 do-ping-kon-t-rol-le
@@ -10977,6 +10988,7 @@ end-er-zeug-nis-ses
 end-kon-t-rol-le
 end-kon-t-rol-len
 end-los-ad-ress-trä-ger
+en-do-nar-thex
 end-re-kur-si-o-nen
 end-spiel-ort
 end-spiel-or-te
@@ -11899,6 +11911,7 @@ ex-li-b-ris
 ex-ma-t-ri-kel
 ex-ma-t-ri-ku-la-ti-on
 ex-ma-t-ri-ku-lie-ren
+exo-nar-thex
 ex-pan-si-b-le
 ex-pan-si-b-lem
 ex-pan-si-b-len
@@ -13934,6 +13947,7 @@ för-der-or-ga-ni-sa-ti-o-nen
 för-der-vo-r-aus-set-zun-gen
 för-der-zen-t-ren
 for-each
+fo-reign
 for-ever
 for-mal-de-hyd
 for-mal-de-mo-kra-tisch
@@ -16448,7 +16462,7 @@ gon-do-li-e-ri
 gone
 go-nio-me-t-rie
 good-ye-ar
-goo-g-le
+google
 gott-er-bar-men
 gott-er-bärm-lich
 got-tes-acker
@@ -17324,6 +17338,7 @@ hän-ge-reck
 hän-ge-re-gis-t-ra-tur
 hang-grund-stü-cke
 hang-grund-stü-cken
+hang-zhou
 hans-wurs-ti-a-de
 har-bot-tle
 hard-core
@@ -36688,6 +36703,7 @@ norm-ent-spre-chen-des
 norm-er-fül-lung
 norm-ori-en-tie-rung
 nor-thamp-ton-shire
+north-east
 not-ab-ga-be
 not-abi-tur
 not-ader-pres-se
@@ -39233,6 +39249,7 @@ po-tenz-pro-b-le-me
 po-tenz-pro-b-le-men
 pott-asche
 pott-sau
+pous-sins
 po-wer
 po-wer-ad-ap-ter
 po-wer-ad-ap-tern
@@ -44172,6 +44189,7 @@ score
 scramb-ler
 screen-shot
 screen-shots
+sean
 se-at-tle
 se-bas-ti-ans
 se-bas-ti-an-stra-ße
@@ -49584,6 +49602,7 @@ top-ter-ro-rist
 top-ter-ro-ris-ten
 top-ter-ro-ris-tin
 tor-aus-beu-te
+tor-björn
 tor-eck
 tor-ecke
 tor-ecks
@@ -49644,6 +49663,7 @@ trab-renn-sport
 trab-renn-sports
 tra-che-en
 tra-che-en-tier
+trade
 tra-di-ti-o-na-lis-mus
 tra-di-ti-o-na-list
 tra-di-ti-o-na-lis-ten
@@ -50868,11 +50888,13 @@ uni-ver-sa-li-en-pro-b-lem
 uni-ver-sa-li-en-pro-b-lems
 uni-ver-sa-l-in-s-t-ru-ment
 uni-ver-sal-mo-dul
+uni-ver-si-taires
 uni-ver-si-täts-bi-b-lio-thek
 uni-ver-si-täts-bi-b-li-o-the-ken
 uni-ver-si-täts-or-ches-ter
 uni-ver-si-täts-or-ches-ters
 uni-ver-si-täts-stra-ße
+uni-ver-si-ty
 unix
 un-kol-le-gi-a-le
 un-kol-le-gi-a-lem
@@ -52158,10 +52180,6 @@ ver-zü-ckun-gen
 ver-zweif-le
 ve-te-ri-när-amt
 ve-te-ri-när-ärz-tin
-vi-a-dukt
-vi-a-duk-te
-vi-a-duk-ten
-vi-a-duk-tes
 vi-a-g-ra
 vi-b-ra-phon
 vi-b-ra-pho-nist
@@ -53953,6 +53971,7 @@ we-cker-ras-selns
 we-ckers
 week-end
 week-end-haus
+week-ly
 weg-an-geln
 weg-aß
 weg-ät-zen
@@ -54482,6 +54501,7 @@ wett-kampf-stät-ten
 wett-skan-dal
 wett-skan-dals
 wett-zu-ma-chen
+what-ever
 whis-key-fla-sche
 whis-key-fla-schen
 whis-ky-fla-sche
@@ -54719,6 +54739,7 @@ wis-sens-trans-fer
 wis-sens-trans-fers
 wis-sens-trieb
 wis-sens-triebs
+witch-craft
 wo-chen-abon-ne-ment
 wo-chen-bett-er-kran-kung
 wo-chen-end-ar-rest
