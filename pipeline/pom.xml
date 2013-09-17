@@ -115,7 +115,7 @@
             <configuration>
               <artifactItems>
                 <artifactItem>
-                  <groupId>net.sf.hunspell</groupId>
+                  <groupId>org.daisy.libs</groupId>
                   <artifactId>hyphen</artifactId>
                   <classifier>${nar.aol}-shared</classifier>
                   <type>nar</type>
