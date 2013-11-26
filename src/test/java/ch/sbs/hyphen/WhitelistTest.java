@@ -1,8 +1,7 @@
-package ch.sbs.jhyphen;
+package ch.sbs.hyphen;
 
-import static org.apache.commons.io.filefilter.FileFilterUtils.asFileFilter;
-import static org.apache.commons.io.filefilter.FileFilterUtils.trueFileFilter;
-import static org.junit.Assert.assertEquals;
+import ch.sbs.jhyphen.Hyphen;
+import ch.sbs.jhyphen.Hyphenator;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -18,9 +17,13 @@ import java.util.Map.Entry;
 import java.util.Scanner;
 
 import org.apache.commons.io.FileUtils;
+import static org.apache.commons.io.filefilter.FileFilterUtils.asFileFilter;
+import static org.apache.commons.io.filefilter.FileFilterUtils.trueFileFilter;
+
 import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;
+import static org.junit.Assert.assertEquals;
 
 public class WhitelistTest {
 	
@@ -36,11 +39,10 @@ public class WhitelistTest {
 						return dir.getName().equals("shared") && fileName.startsWith("libhyphen"); }}),
 				trueFileFilter())).iterator().next());
 		
-		File projectHome = new File(testRootDir, "../../..");
-		
-		File whitelist = new File(projectHome, "whitelist_de_SBS.txt");
-		File dictionary = new File(projectHome, "hyph_de_DE.dic");
-		File origDictionary = new File(projectHome, "hyph_de_DE.orig.dic");
+		File projectHome = new File(testRootDir, "../..");
+		File whitelist = new File(projectHome, "src/main/resources/whitelist/whitelist_de_SBS.txt");
+		File dictionary = new File(projectHome, "target/generated-resources/tables/hyph_de_DE.dic");
+		File origDictionary = new File(projectHome, "src/main/resources/tables/hyph_de_DE.dic");
 		
 		Hyphenator hyphenator = new Hyphenator(dictionary);
 		Hyphenator origHyphenator = new Hyphenator(origDictionary);
@@ -48,8 +50,6 @@ public class WhitelistTest {
 		List<String> redundantWords = new ArrayList<String>();
 		
 		Scanner scanner = new Scanner(whitelist, "ISO8859-1");
-		long start = System.currentTimeMillis();
-		int i = 0;
 		String word = null;
 		String unhyphenated = null;
 		while (scanner.hasNext()) {
@@ -57,11 +57,7 @@ public class WhitelistTest {
 			unhyphenated = word.replaceAll("\\-", "");
 			assertEquals(word, hyphenator.hyphenate(unhyphenated, '-', null));
 			if(word.equals(origHyphenator.hyphenate(unhyphenated, '-', null)))
-				redundantWords.add(unhyphenated);
-			i++;
-			if (i % 100 == 0)
-				System.out.println(String.format("... tested %d words in %d milliseconds",
-						i, (int)(System.currentTimeMillis()-start))); }
+				redundantWords.add(unhyphenated); }
 		
 		System.out.print("The following words are correctly hyphenated without whitelist:\n=> ");
 		for (String w : redundantWords)

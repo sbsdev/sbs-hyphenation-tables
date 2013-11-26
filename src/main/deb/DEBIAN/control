@@ -1,0 +1,8 @@
+Package: ${project.artifactId}
+Version: ${project.detailedVersion}
+Section: text
+Priority: optional
+Architecture: all
+Replaces: openoffice.org-hyphenation-de, hyphen-de
+Maintainer: Bert Frees <bert.frees@sbs.ch>
+Description: German hyphenation tables for SBS
