@@ -23,7 +23,7 @@
     <dependency>
       <groupId>org.daisy</groupId>
       <artifactId>jhyphen</artifactId>
-      <version>0.1.5</version>
+      <version>0.1.5-SNAPSHOT</version>
       <scope>test</scope>
     </dependency>
     <dependency>
