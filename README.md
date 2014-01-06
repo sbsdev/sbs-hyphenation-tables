@@ -13,9 +13,14 @@ mvn clean package
 
 ## Release
 
+**Note**: Unfortunately for now we are dependent on an unreleased
+version of the nar plugin. It is only used for testing. In order to be
+able to release we need to ignore this snapshot dependency by using
+`-DignoreSnapshots=true`.
+
 ```sh
-mvn release:clean release:prepare -DdryRun=true
-mvn release:clean release:prepare release:perform
+mvn release:clean release:prepare -DdryRun=true -DignoreSnapshots=true
+mvn release:clean release:prepare release:perform -DignoreSnapshots=true
 ```
 
 ## Install
