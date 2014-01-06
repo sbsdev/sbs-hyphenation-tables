@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
-    xmlns="http://maven.apache.org/POM/4.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   
   <modelVersion>4.0.0</modelVersion>
   
@@ -9,12 +7,12 @@
     <groupId>ch.sbs.pipeline</groupId>
     <artifactId>sbs-modules-parent</artifactId>
     <version>1.0</version>
-    <relativePath/>
+    <relativePath />
   </parent>
   
   <groupId>ch.sbs.pipeline</groupId>
   <artifactId>sbs-hyphenation-tables</artifactId>
-  <version>1.13-SNAPSHOT</version>
+  <version>1.13</version>
   <packaging>bundle</packaging>
   
   <name>DAISY Pipeline 2 module :: sbs-hyphenation-tables</name>
@@ -73,24 +71,24 @@
             </goals>
             <configuration>
               <target>
-                <mkdir dir="target/generated-resources/tables"/>
-                <mkdir dir="target/generated-resources/whitelist"/>
+                <mkdir dir="target/generated-resources/tables" />
+                <mkdir dir="target/generated-resources/whitelist" />
                 <apply executable="utils/whitelist-to-patterns.sh" failonerror="yes" dest="target/generated-resources/whitelist">
-                  <srcfile/>
-                  <targetfile/>
-                  <fileset dir="src/main/resources/whitelist" includes="*.txt"/>
-                  <mapper type="glob" from="*.txt" to="*.dic"/>
+                  <srcfile />
+                  <targetfile />
+                  <fileset dir="src/main/resources/whitelist" includes="*.txt" />
+                  <mapper type="glob" from="*.txt" to="*.dic" />
                 </apply>
                 <exec executable="cat" failonerror="yes">
-                  <arg value="src/main/resources/tables/hyph_de_DE.dic"/>
-                  <arg value="target/generated-resources/whitelist/whitelist_de.dic"/>
-                  <arg value="target/generated-resources/whitelist/whitelist_de_SBS.dic"/>
-                  <redirector output="target/generated-resources/tables/hyph_de_DE.dic"/>
+                  <arg value="src/main/resources/tables/hyph_de_DE.dic" />
+                  <arg value="target/generated-resources/whitelist/whitelist_de.dic" />
+                  <arg value="target/generated-resources/whitelist/whitelist_de_SBS.dic" />
+                  <redirector output="target/generated-resources/tables/hyph_de_DE.dic" />
                 </exec>
                 <exec executable="cat" failonerror="yes">
-                  <arg value="src/main/resources/tables/hyph_de_OLDSPELL.dic"/>
-                  <arg value="target/generated-resources/whitelist/whitelist_de_OLDSPELL.dic"/>
-                  <redirector output="target/generated-resources/tables/hyph_de_OLDSPELL.dic"/>
+                  <arg value="src/main/resources/tables/hyph_de_OLDSPELL.dic" />
+                  <arg value="target/generated-resources/whitelist/whitelist_de_OLDSPELL.dic" />
+                  <redirector output="target/generated-resources/tables/hyph_de_OLDSPELL.dic" />
                 </exec>
               </target>
             </configuration>
@@ -158,4 +156,8 @@
     </plugins>
   </build>
   
+
+  <scm>
+    <tag>v1.13</tag>
+  </scm>
 </project>
