@@ -24,10 +24,10 @@ mvn release:clean release:prepare release:perform
 dpkg -i target/*.deb
 ```
 
-This will install the following hyphenation tables into /usr/share/hyphen:
+This will install the following hyphenation tables into `/usr/share/hyphen`:
 
- * hyph_de_DE.dic
- * hyph_de_DE_OLDSPELL
+- `hyph_de_DE.dic`
+- `hyph_de_DE_OLDSPELL`
 
 ## Authors
 
