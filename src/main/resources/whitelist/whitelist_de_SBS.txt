@@ -11808,6 +11808,7 @@ even-tu-al-an-trag
 even-tu-a-li-tät
 even-tu-a-li-tä-ten
 ever-te-b-rat
+eve-ry-one
 evo-lu-ti-o-när
 evo-lu-ti-o-nä-re
 evo-lu-ti-o-nä-rem
@@ -20024,7 +20025,7 @@ he-r-aus-zu-quet-schen-des
 he-r-aus-zu-rech-nen
 he-r-aus-zu-re-den
 he-r-aus-zu-rei-ßen
-he-r-aus-zu-rück-en
+he-r-aus-zu-rü-cken
 he-r-aus-zu-rück-en-de
 he-r-aus-zu-rück-en-dem
 he-r-aus-zu-rück-en-den
@@ -26952,6 +26953,7 @@ jeans-pro-duk-ti-on
 jeans-pro-duk-ti-o-nen
 jeans-stoff
 jeans-typ
+jed-burghs
 jeep-fah-rer
 jeep-fah-re-rin
 jeep-fah-rern
@@ -34731,6 +34733,7 @@ mo-le-kül-mo-dells
 mo-le-kül-spek-t-rum
 mole-skin
 mo-li-e-re
+mo-li-ère
 mo-li-e-res
 mol-ken-ei-weiß
 mol-ke-rei-er-zeug-nis
@@ -49737,6 +49740,7 @@ trans-dis-zi-p-li-nä-ren
 trans-dis-zi-p-li-nä-rer
 trans-dis-zi-p-li-nä-res
 trans-fer-dru-ckes
+trans-fe-ror
 trans-fer-zen-t-rum
 trans-for-ma-ti-o-nell
 trans-for-ma-ti-o-nen
@@ -56228,6 +56232,7 @@ zu-pflas-tern
 zu-pfrop-fen
 zu-rät
 zu-recht-rü-cken
+zü-rich-berg-schnep-fen
 zu-rück-blieb
 zu-rück-blie-ben
 zu-rück-bliebst

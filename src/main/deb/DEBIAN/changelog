@@ -1,3 +1,9 @@
+sbs-hyphenation-tables (1.13-1) unstable; urgency=low
+
+  * Update whitelist
+
+ -- Bert Frees <bert.frees@sbs.ch>  Mon, 06 Jan 2014 11:18:40 +0100
+
 sbs-hyphenation-tables (1.12-1) unstable; urgency=low
 
   * Update whitelist
