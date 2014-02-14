@@ -1617,6 +1617,7 @@ al-pha-geo-me-t-ri-sches
 al-pha-hä-mo-ly-se
 al-pha-ver-ar-bei-tung
 alp-hüt-te
+älp-li
 als-ter-ufer
 alt-ade-lig
 alt-ade-li-ge
@@ -1659,6 +1660,7 @@ al-tar-skulp-tur
 al-tars-sa-k-ra-ment
 alt-au-to
 alt-au-tos
+alt-bach
 alt-bäu-e-rin
 alt-ei-gen-tü-mer
 alt-ei-gen-tü-me-rin
@@ -2046,6 +2048,7 @@ an-epi-gra-fa
 an-epi-gra-fisch
 an-epi-gra-pha
 an-epi-gra-phisch
+anet
 ane-thol
 ane-tho-pa-thie
 ane-to-der-mie
@@ -3148,6 +3151,7 @@ as-sem-b-ler-an-wei-sun-gen
 as-sem-b-ler-di-rek-ti-ve
 as-semb-lier-spra-che
 as-semb-lie-rung
+ass-hole
 as-sis-tenz-ärz-te
 as-sis-tenz-ärz-ten
 as-sis-tenz-ärz-tin
@@ -4168,6 +4172,7 @@ azy-k-li-schen
 azy-k-li-scher
 azy-k-li-sches
 baath-par-tei
+babe
 ba-by-lo-ni-ers
 ba-che-lor-stu-di-en-gang
 ba-che-lor-stu-di-en-gän-ge
@@ -6196,6 +6201,7 @@ bör-si-a-ne-rin
 bör-si-a-ne-rin-nen
 bör-si-a-nern
 bör-si-a-ners
+bos-koop
 bos-ni-a-ke
 bos-ton
 bo-ta-nik-le-xi-kon
@@ -6806,6 +6812,8 @@ ca-b-ri-os
 ca-b-rio-ver-si-on
 ca-b-rio-ver-si-o-nen
 ca-fe-ti-er
+cake
+cakes
 cal-ci-um-an-t-a-go-nist
 cal-ci-um-flu-o-rid
 cal-ci-um-oxid
@@ -7005,6 +7013,7 @@ co-gnac-far-be-nen
 co-gnac-far-be-ner
 co-gnac-far-be-nes
 coin-t-reau
+coke
 co-la-fla-sche
 co-la-fla-schen
 cole
@@ -7959,6 +7968,8 @@ de-tail-in-for-ma-ti-on
 de-tail-in-for-ma-ti-o-nen
 de-tail-kon-s-t-ruk-teur
 de-tail-sze-nen
+de-tec-tive
+de-tec-tives
 de-tek-tiv-ro-man
 de-tek-tiv-ro-ma-ne
 de-tek-tiv-ro-ma-nen
@@ -13290,12 +13301,12 @@ fi-cke-ri-ges
 fi-d-schi-a-ner
 fie-ber-hei-ßem
 fie-ber-mü-cke
-fie-b-rig
-fie-b-ri-ge
-fie-b-ri-gem
-fie-b-ri-gen
-fie-b-ri-ger
-fie-b-ri-ges
+fieb-rig
+fieb-ri-ge
+fieb-ri-gem
+fieb-ri-gen
+fieb-ri-ger
+fieb-ri-ges
 fi-e-rant
 fi-es-ta
 fi-gur-be-wuss-ter
@@ -14297,6 +14308,7 @@ frie-dens-tau-be
 frie-dens-trup-pe
 frie-dens-trup-pen
 fried-hofs-stim-mung
+friend
 frie-sel-aus-schlag
 frie-sen-nerz
 frigh-tened
@@ -16417,6 +16429,8 @@ gnos-ti-scher
 gnos-ti-sches
 gnos-ti-zis-mus
 goeb-bels
+gogh
+goghs
 gold-adern
 gold-ak-tie
 gold-ak-ti-en
@@ -16576,8 +16590,6 @@ gra-phit-hal-ti-gem
 gra-phit-hal-ti-gen
 gra-phit-hal-ti-ger
 gra-phit-hal-ti-ges
-grap-pa
-gra-seg-ger
 gras-eu-le
 gras-hirsch
 gras-mü-cke
@@ -22909,6 +22921,7 @@ hi-n-aus-zu-zö-gern-dem
 hi-n-aus-zu-zö-gern-den
 hi-n-aus-zu-zö-gern-der
 hi-n-aus-zu-zö-gern-des
+hinds
 hin-du-is-mus
 hin-du-is-tisch
 hin-du-is-ti-sche
@@ -31068,6 +31081,7 @@ lei-bes-stra-fe
 lei-bes-vi-si-ta-ti-o-nen
 leib-re-gi-ment
 leib-re-gi-ments
+leices-ter
 lei-chen-ob-duk-ti-on
 leicht-in-dus-t-rie
 leicht-ma-t-ro-se
@@ -32580,6 +32594,7 @@ markt-vi-si-o-nen
 mark-up
 mar-kus-evan-ge-li-um
 mar-kus-pas-si-on
+mar-lowe
 mar-me-la-den-glä-ser
 mar-me-la-den-glä-sern
 mar-mor-flie-sen
@@ -34991,6 +35006,7 @@ mot-ten-ech-tem
 mot-ten-ech-ten
 mot-ten-ech-ter
 mot-ten-ech-tes
+mous-kou-ri
 möw-chen
 mö-wen-ei
 mü-cke
@@ -54951,6 +54967,7 @@ yale
 year
 york-shire
 york-shire-ter-ri-er
+you-tube
 za-g-reb
 za-g-rebs
 zä-hes-te
