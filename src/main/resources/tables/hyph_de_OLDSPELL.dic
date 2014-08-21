@@ -1,33 +1,33 @@
 ISO8859-1
-####################################################################################
-# This is the hyphenation file "hyph_de_DE_oldspell.dic" of the German dictionary  #
-# according to the rules of 1901 (i.e. classical German spelling)                  #
-#                                                                                  #
-# Language: German (de DE)                                                         #
-#                                                                                  #
-# Version:  2011-10-20                                                             #
-#           author and license information added in source file,                   #
-#           blacklist added by Karl Zeiler to improve the hyphenation module       #
-#                                                                                  #
-# Origin:   Based on the TeX hyphenation tables	"dehyphn.tex", rev. level N/A.     #
-#           http://www.ctan.org/tex-archive/language/hyphenation/dehyphn.tex       #
-#           The TeX hyphenation tables are released under the LaTeX Project        #
-#           Public License (LPPL)                                                  #
-#                                                                                  #
-# License:  OpenOffice.org Adaptions of this package are licensed under the        #
-#           GNU Lesser General Public License (LGPL 2) and are under               #
-#           Copyright by                                                           #
-#                                                                                  #
-# Author:   conversion author is Marco Huggenberger<marco@by-night.ch>             #
-#           revised conversion and extensions: Daniel Naber                        #
-#                                                                                  #
-# Please note, this dictionary is based on syllable matching patterns              #
-# and thus should be suitable under other variations of German old spelling        #
-#                                                                                  #
-# HYPH de DE hyph_de_DE                                                            #
-# HYPH de AT hyph_de_AT                                                            #
-# HYPH de CH hyph_de_CH                                                            #
-####################################################################################
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% This is the hyphenation file "hyph_de_DE_oldspell.dic" of the German dictionary  %
+% according to the rules of 1901 (i.e. classical German spelling)                  %
+%                                                                                  %
+% Language: German (de DE)                                                         %
+%                                                                                  %
+% Version:  2011-10-20                                                             %
+%           author and license information added in source file,                   %
+%           blacklist added by Karl Zeiler to improve the hyphenation module       %
+%                                                                                  %
+% Origin:   Based on the TeX hyphenation tables	"dehyphn.tex", rev. level N/A.     %
+%           http://www.ctan.org/tex-archive/language/hyphenation/dehyphn.tex       %
+%           The TeX hyphenation tables are released under the LaTeX Project        %
+%           Public License (LPPL)                                                  %
+%                                                                                  %
+% License:  OpenOffice.org Adaptions of this package are licensed under the        %
+%           GNU Lesser General Public License (LGPL 2) and are under               %
+%           Copyright by                                                           %
+%                                                                                  %
+% Author:   conversion author is Marco Huggenberger<marco@by-night.ch>             %
+%           revised conversion and extensions: Daniel Naber                        %
+%                                                                                  %
+% Please note, this dictionary is based on syllable matching patterns              %
+% and thus should be suitable under other variations of German old spelling        %
+%                                                                                  %
+% HYPH de DE hyph_de_DE                                                            %
+% HYPH de AT hyph_de_AT                                                            %
+% HYPH de CH hyph_de_CH                                                            %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 .aa6l
 .ab3a4s
