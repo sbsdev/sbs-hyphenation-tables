@@ -43,7 +43,13 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-  
+
+  <scm>
+    <connection>scm:git:git://github.com/sbsdev/sbs-hyphenation-tables.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com:sbsdev/sbs-hyphenation-tables.git</developerConnection>
+    <tag>HEAD</tag>
+  </scm>
+
   <build>
     <resources>
       <resource>
