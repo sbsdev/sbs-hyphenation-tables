@@ -12,7 +12,7 @@
   
   <groupId>ch.sbs.pipeline</groupId>
   <artifactId>sbs-hyphenation-tables</artifactId>
-  <version>1.17-SNAPSHOT</version>
+  <version>1.17</version>
   <packaging>bundle</packaging>
   
   <name>DAISY Pipeline 2 module :: sbs-hyphenation-tables</name>
@@ -48,7 +48,7 @@
   <scm>
     <connection>scm:git:git://github.com/sbsdev/sbs-hyphenation-tables.git</connection>
     <developerConnection>scm:git:ssh://git@github.com:sbsdev/sbs-hyphenation-tables.git</developerConnection>
-    <tag>HEAD</tag>
+    <tag>v1.17</tag>
   </scm>
 
   <build>
@@ -118,18 +118,16 @@
               <target>
                 <mkdir dir="target/build-classes" />
                 <mkdir dir="target/generated-resources/tables" />
-                <property name="build.compiler" value="extJavac"/>
-                <javac srcdir="src/build/java" destdir="target/build-classes"
-                       classpathref="maven.plugin.classpath" source="1.6" target="1.6" />
+                <property name="build.compiler" value="extJavac" />
+                <javac srcdir="src/build/java" destdir="target/build-classes" classpathref="maven.plugin.classpath" source="1.6" target="1.6" />
                 <java classname="GenerateWhitelist">
                   <classpath>
-                    <path refid="maven.plugin.classpath"/>
-                    <pathelement path="target/build-classes"/>
+                    <path refid="maven.plugin.classpath" />
+                    <pathelement path="target/build-classes" />
                   </classpath>
-                  <sysproperty key="jna.nosys" value="true"/>
+                  <sysproperty key="jna.nosys" value="true" />
                 </java>
-                <apply executable="src/build/sh/whitelist-to-patterns.sh" failonerror="yes"
-                       dest="target/generated-resources">
+                <apply executable="src/build/sh/whitelist-to-patterns.sh" failonerror="yes" dest="target/generated-resources">
                   <srcfile />
                   <targetfile />
                   <fileset dir="target/generated-resources" includes="whitelist_*.txt" />
