@@ -87,7 +87,7 @@ public class GenerateWhitelist {
 				else if ("so".equals(elements.peek())) {
 					soll = text;
 					ist = ("ALT".equals(rechtschreibung) ?
-					           hyphenatorNewSpelling :
+					           hyphenatorOldSpelling :
 					           hyphenatorNewSpelling
 					      ).hyphenate(wort, '-', null);
 					if (!ist.equals(soll))
