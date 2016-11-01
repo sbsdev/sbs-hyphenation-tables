@@ -40,11 +40,11 @@ public class GenerateWhitelist {
 				trueFileFilter())).iterator().next());
 		
 		File dictionaryNewSpelling = new File(projectHome, "src/main/resources/tables/hyph_de_DE.dic");
-		File dictionaryOldSpelling = new File(projectHome, "src/main/resources/tables/hyph_de_OLDSPELL.dic");
+		File dictionaryOldSpelling = new File(projectHome, "src/main/resources/tables/hyph_de_DE_OLDSPELL.dic");
 		File trennfehlerGesamtliste = new File(projectHome, "src/main/resources/tables/trennfehler_gesamtliste.xml");
 		File whitelistSBS = new File(projectHome, "target/generated-resources/whitelist_de_SBS.txt");
 		File whitelistUpstream = new File(projectHome, "target/generated-resources/whitelist_de.txt");
-		File whitelistOldSpelling = new File(projectHome, "target/generated-resources/whitelist_de_OLDSPELL.txt");
+		File whitelistOldSpelling = new File(projectHome, "target/generated-resources/whitelist_de_DE_OLDSPELL.txt");
 		
 		final Hyphenator hyphenatorNewSpelling = new Hyphenator(dictionaryNewSpelling);
 		final Hyphenator hyphenatorOldSpelling = new Hyphenator(dictionaryOldSpelling);

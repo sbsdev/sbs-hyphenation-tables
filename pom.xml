@@ -141,9 +141,9 @@
                   <redirector output="target/generated-resources/hyph_de_DE.dic" />
                 </exec>
                 <exec executable="cat" failonerror="yes">
-                  <arg value="src/main/resources/tables/hyph_de_OLDSPELL.dic" />
-                  <arg value="target/generated-resources/whitelist_de_OLDSPELL.dic" />
-                  <redirector output="target/generated-resources/hyph_de_OLDSPELL.dic" />
+                  <arg value="src/main/resources/tables/hyph_de_DE_OLDSPELL.dic" />
+                  <arg value="target/generated-resources/whitelist_de_DE_OLDSPELL.dic" />
+                  <redirector output="target/generated-resources/hyph_de_DE_OLDSPELL.dic" />
                 </exec>
                 <exec executable="target/dependency/bin/${nar.aol}/substrings.pl" failonerror="yes">
                   <arg value="target/generated-resources/hyph_de_DE.dic" />
@@ -151,8 +151,8 @@
                   <redirector output="/dev/null" />
                 </exec>
                 <exec executable="target/dependency/bin/${nar.aol}/substrings.pl" failonerror="yes">
-                  <arg value="target/generated-resources/hyph_de_OLDSPELL.dic" />
-                  <arg value="target/generated-resources/tables/hyph_de_OLDSPELL.dic" />
+                  <arg value="target/generated-resources/hyph_de_DE_OLDSPELL.dic" />
+                  <arg value="target/generated-resources/tables/hyph_de_DE_OLDSPELL.dic" />
                   <redirector output="/dev/null" />
                 </exec>
               </target>
