@@ -12,7 +12,7 @@
   
   <groupId>ch.sbs.pipeline</groupId>
   <artifactId>sbs-hyphenation-tables</artifactId>
-  <version>1.21-SNAPSHOT</version>
+  <version>1.21</version>
   <packaging>bundle</packaging>
   
   <name>DAISY Pipeline 2 module :: sbs-hyphenation-tables</name>
@@ -48,7 +48,7 @@
   <scm>
     <connection>scm:git:git://github.com/sbsdev/sbs-hyphenation-tables.git</connection>
     <developerConnection>scm:git:ssh://git@github.com:sbsdev/sbs-hyphenation-tables.git</developerConnection>
-    <tag>HEAD</tag>
+    <tag>v1.21</tag>
   </scm>
 
   <build>
