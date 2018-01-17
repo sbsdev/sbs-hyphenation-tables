@@ -16,7 +16,17 @@
   <packaging>bundle</packaging>
   
   <name>DAISY Pipeline 2 module :: sbs-hyphenation-tables</name>
-  
+  <description>German hyphenation tables used by Swiss Library for the
+  Blind, Visually Impaired and Print Disabled.</description>
+  <url>https://github.com/sbsdev/sbs-hyphenation-tables</url>
+
+  <licenses>
+    <license>
+      <name>GNU Lesser General Public License 3.0</name>
+      <url>http://www.gnu.org/licenses/lgpl.html</url>
+    </license>
+  </licenses>
+
   <properties>
     <hyphen.version>2.6.0</hyphen.version>
     <jhyphen.version>0.1.5</jhyphen.version>
@@ -48,6 +58,7 @@
   <scm>
     <connection>scm:git:git://github.com/sbsdev/sbs-hyphenation-tables.git</connection>
     <developerConnection>scm:git:ssh://git@github.com:sbsdev/sbs-hyphenation-tables.git</developerConnection>
+    <url>https://github.com/sbsdev/sbs-hyphenation-tables/tree/master</url>
     <tag>HEAD</tag>
   </scm>
 
