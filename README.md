@@ -18,6 +18,11 @@ mvn release:clean release:prepare -DdryRun=true
 mvn release:clean release:prepare release:perform
 ```
 
+after that make sure the artifacts are pushed to Maven Central by
+closing and releasing them in the
+[Sonatype Nexus Repository Manager](https://oss.sonatype.org/#stagingRepositories).
+
+
 ## Install
 
 ```sh
