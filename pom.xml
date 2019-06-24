@@ -6,7 +6,7 @@
   <parent>
     <groupId>ch.sbs.pipeline</groupId>
     <artifactId>modules-parent</artifactId>
-    <version>1.8</version>
+    <version>1.9</version>
     <relativePath />
   </parent>
   
@@ -32,9 +32,19 @@
     <jhyphen.version>0.1.5</jhyphen.version>
     <commons-io.version>2.2</commons-io.version>
     <tagNameFormat>v@{project.version}</tagNameFormat>
+    <expose-services>
+      org.daisy.pipeline.braille.libhyphen.impl.LibhyphenTablePath_http___www_sbs_ch_pipeline_hyphen_
+    </expose-services>
   </properties>
   
   <dependencies>
+    <dependency>
+      <groupId>org.daisy.pipeline.modules.braille</groupId>
+      <artifactId>libhyphen-utils</artifactId>
+    </dependency>
+    <!--
+        test dependencies
+    -->
     <dependency>
       <groupId>org.daisy.bindings</groupId>
       <artifactId>jhyphen</artifactId>
@@ -68,6 +78,7 @@
         <directory>src/main/resources</directory>
         <excludes>
           <exclude>tables/*</exclude>
+          <exclude>META-INF/catalog.xml</exclude>
         </excludes>
       </resource>
       <resource>
@@ -190,16 +201,6 @@
           <systemPropertyVariables>
             <jna.nosys>true</jna.nosys>
           </systemPropertyVariables>
-        </configuration>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.felix</groupId>
-        <artifactId>maven-bundle-plugin</artifactId>
-        <configuration>
-          <instructions>
-            <Import-Package>org.daisy.pipeline.braille.libhyphen</Import-Package>
-            <Service-Component>OSGI-INF/sbs-hyphenation-tables.xml</Service-Component>
-          </instructions>
         </configuration>
       </plugin>
       <plugin>
