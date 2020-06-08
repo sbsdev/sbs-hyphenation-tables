@@ -39,8 +39,8 @@ public class GenerateWhitelist {
 						return dir.getName().equals("shared") && fileName.startsWith("libhyphen"); }}),
 				trueFileFilter())).iterator().next());
 		
-		File dictionaryNewSpelling = new File(projectHome, "src/main/resources/tables/hyph_de_DE.dic");
-		File dictionaryOldSpelling = new File(projectHome, "src/main/resources/tables/hyph_de_DE_OLDSPELL.dic");
+		File dictionaryNewSpelling = new File(projectHome, "src/main/resources/tables/hyph_de_DE.base.dic");
+		File dictionaryOldSpelling = new File(projectHome, "src/main/resources/tables/hyph_de_DE_OLDSPELL.base.dic");
 		File trennfehlerGesamtliste = new File(projectHome, "src/main/resources/tables/trennfehler_gesamtliste.xml");
 		File whitelistSBS = new File(projectHome, "target/generated-resources/whitelist_de_SBS.txt");
 		File whitelistUpstream = new File(projectHome, "target/generated-resources/whitelist_de.txt");
