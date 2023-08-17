@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" xmlns:px="http://www.daisy.org/ns/pipeline">
+  <uri name="http://www.sbs.ch/pipeline/hyphen/" uri="../tables/" px:content-type="libhyphen-tables"/>
+</catalog>

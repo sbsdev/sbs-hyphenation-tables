@@ -32,8 +32,8 @@ public class TrennfehlerGesamtlisteTest {
 			throws FileNotFoundException, ParserConfigurationException, IOException, SAXException,
 			       UnsupportedCharsetException {
 		
-		File dictionaryNewSpelling = new File(projectHome, "target/generated-resources/tables/hyph_de_DE.dic");
-		File dictionaryOldSpelling = new File(projectHome, "target/generated-resources/tables/hyph_de_DE_OLDSPELL.dic");
+		File dictionaryNewSpelling = new File(projectHome, "src/main/resources/tables/hyph_de_DE.dic");
+		File dictionaryOldSpelling = new File(projectHome, "src/main/resources/tables/hyph_de_DE_OLDSPELL.dic");
 		File trennfehlerGesamtliste = new File(projectHome, "src/main/resources/tables/trennfehler_gesamtliste.xml");
 		
 		final Hyphenator hyphenatorNewSpelling = new Hyphenator(dictionaryNewSpelling);

@@ -6,7 +6,7 @@
   <parent>
     <groupId>ch.sbs.pipeline</groupId>
     <artifactId>modules-parent</artifactId>
-    <version>1.8</version>
+    <version>1.9</version>
     <relativePath />
   </parent>
   
@@ -32,9 +32,19 @@
     <jhyphen.version>0.1.5</jhyphen.version>
     <commons-io.version>2.2</commons-io.version>
     <tagNameFormat>v@{project.version}</tagNameFormat>
+    <expose-services>
+      org.daisy.pipeline.braille.libhyphen.impl.LibhyphenTablePath_http___www_sbs_ch_pipeline_hyphen_
+    </expose-services>
   </properties>
   
   <dependencies>
+    <dependency>
+      <groupId>org.daisy.pipeline.modules.braille</groupId>
+      <artifactId>libhyphen-utils</artifactId>
+    </dependency>
+    <!--
+        test dependencies
+    -->
     <dependency>
       <groupId>org.daisy.bindings</groupId>
       <artifactId>jhyphen</artifactId>
@@ -67,12 +77,11 @@
       <resource>
         <directory>src/main/resources</directory>
         <excludes>
-          <exclude>tables/*</exclude>
+          <exclude>tables/hyph_de_DE.base.dic</exclude>
+          <exclude>tables/hyph_de_DE_OLDSPELL.base.dic</exclude>
+          <exclude>tables/trennfehler_gesamtliste.xml</exclude>
+          <exclude>META-INF/catalog.xml</exclude>
         </excludes>
-      </resource>
-      <resource>
-        <directory>target/generated-resources/tables</directory>
-        <targetPath>tables</targetPath>
       </resource>
     </resources>
     <plugins>
@@ -118,72 +127,6 @@
         </executions>
       </plugin>
       <plugin>
-        <artifactId>maven-antrun-plugin</artifactId>
-        <executions>
-          <execution>
-            <id>process-whitelist</id>
-            <phase>process-resources</phase>
-            <goals>
-              <goal>run</goal>
-            </goals>
-            <configuration>
-              <target>
-                <mkdir dir="target/build-classes" />
-                <mkdir dir="target/generated-resources/tables" />
-                <property name="build.compiler" value="extJavac" />
-                <javac srcdir="src/build/java" destdir="target/build-classes" classpathref="maven.plugin.classpath" source="1.6" target="1.6" />
-                <java classname="GenerateWhitelist">
-                  <classpath>
-                    <path refid="maven.plugin.classpath" />
-                    <pathelement path="target/build-classes" />
-                  </classpath>
-                  <sysproperty key="jna.nosys" value="true" />
-                </java>
-                <apply executable="src/build/sh/whitelist-to-patterns.sh" failonerror="yes" dest="target/generated-resources">
-                  <srcfile />
-                  <targetfile />
-                  <fileset dir="target/generated-resources" includes="whitelist_*.txt" />
-                  <mapper type="glob" from="*.txt" to="*.dic" />
-                </apply>
-                <exec executable="cat" failonerror="yes">
-                  <arg value="src/main/resources/tables/hyph_de_DE.dic" />
-                  <arg value="target/generated-resources/whitelist_de.dic" />
-                  <arg value="target/generated-resources/whitelist_de_SBS.dic" />
-                  <redirector output="target/generated-resources/hyph_de_DE.dic" />
-                </exec>
-                <exec executable="cat" failonerror="yes">
-                  <arg value="src/main/resources/tables/hyph_de_DE_OLDSPELL.dic" />
-                  <arg value="target/generated-resources/whitelist_de_DE_OLDSPELL.dic" />
-                  <redirector output="target/generated-resources/hyph_de_DE_OLDSPELL.dic" />
-                </exec>
-                <exec executable="target/dependency/bin/${nar.aol}/substrings.pl" failonerror="yes">
-                  <arg value="target/generated-resources/hyph_de_DE.dic" />
-                  <arg value="target/generated-resources/tables/hyph_de_DE.dic" />
-                  <redirector output="/dev/null" />
-                </exec>
-                <exec executable="target/dependency/bin/${nar.aol}/substrings.pl" failonerror="yes">
-                  <arg value="target/generated-resources/hyph_de_DE_OLDSPELL.dic" />
-                  <arg value="target/generated-resources/tables/hyph_de_DE_OLDSPELL.dic" />
-                  <redirector output="/dev/null" />
-                </exec>
-              </target>
-            </configuration>
-          </execution>
-        </executions>
-        <dependencies>
-          <dependency>
-            <groupId>org.daisy.bindings</groupId>
-            <artifactId>jhyphen</artifactId>
-            <version>${jhyphen.version}</version>
-          </dependency>
-          <dependency>
-            <groupId>commons-io</groupId>
-            <artifactId>commons-io</artifactId>
-            <version>${commons-io.version}</version>
-          </dependency>
-        </dependencies>
-      </plugin>
-      <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
         <configuration>
@@ -193,23 +136,17 @@
         </configuration>
       </plugin>
       <plugin>
-        <groupId>org.apache.felix</groupId>
-        <artifactId>maven-bundle-plugin</artifactId>
-        <configuration>
-          <instructions>
-            <Import-Package>org.daisy.pipeline.braille.libhyphen</Import-Package>
-            <Service-Component>OSGI-INF/sbs-hyphenation-tables.xml</Service-Component>
-          </instructions>
-        </configuration>
-      </plugin>
-      <plugin>
         <groupId>org.vafer</groupId>
         <artifactId>jdeb</artifactId>
         <configuration>
           <dataSet>
             <data>
               <type>directory</type>
-              <src>target/generated-resources/tables</src>
+              <src>src/main/resources/tables</src>
+              <includes>
+                hyph_de_DE.dic,
+                hyph_de_DE_OLDSPELL.dic
+              </includes>
               <mapper>
                 <type>perm</type>
                 <prefix>/usr/share/hyphen</prefix>
@@ -220,4 +157,85 @@
       </plugin>
     </plugins>
   </build>
+  <profiles>
+    <!-- enable to regenerate hyph_de_DE.dic and hyph_de_DE_OLDSPELL.dic from hyph_de_DE.base.dic,
+         hyph_de_DE_OLDSPELL.base.dic and trennfehler_gesamtliste.xml -->
+    <profile>
+      <id>regenerate-tables</id>
+      <activation>
+        <file>
+          <missing>src/main/resources/tables/hyph_de_DE.dic</missing>
+        </file>
+      </activation>
+      <build>
+        <plugins>
+          <plugin>
+            <artifactId>maven-antrun-plugin</artifactId>
+            <executions>
+              <execution>
+                <id>regenerate-tables</id>
+                <phase>process-resources</phase>
+                <goals>
+                  <goal>run</goal>
+                </goals>
+                <configuration>
+                  <target>
+                    <mkdir dir="target/build-classes" />
+                    <property name="build.compiler" value="extJavac" />
+                    <javac srcdir="src/build/java" destdir="target/build-classes" classpathref="maven.plugin.classpath" source="1.6" target="1.6" />
+                    <java classname="GenerateWhitelist">
+                      <classpath>
+                        <path refid="maven.plugin.classpath" />
+                        <pathelement path="target/build-classes" />
+                      </classpath>
+                      <sysproperty key="jna.nosys" value="true" />
+                    </java>
+                    <apply executable="src/build/sh/whitelist-to-patterns.sh" failonerror="yes" dest="target/generated-resources">
+                      <srcfile />
+                      <targetfile />
+                      <fileset dir="target/generated-resources" includes="whitelist_*.txt" />
+                      <mapper type="glob" from="*.txt" to="*.dic" />
+                    </apply>
+                    <exec executable="cat" failonerror="yes">
+                      <arg value="src/main/resources/tables/hyph_de_DE.base.dic" />
+                      <arg value="target/generated-resources/whitelist_de.dic" />
+                      <arg value="target/generated-resources/whitelist_de_SBS.dic" />
+                      <redirector output="target/generated-resources/hyph_de_DE.dic" />
+                    </exec>
+                    <exec executable="cat" failonerror="yes">
+                      <arg value="src/main/resources/tables/hyph_de_DE_OLDSPELL.base.dic" />
+                      <arg value="target/generated-resources/whitelist_de_DE_OLDSPELL.dic" />
+                      <redirector output="target/generated-resources/hyph_de_DE_OLDSPELL.dic" />
+                    </exec>
+                    <exec executable="target/dependency/bin/${nar.aol}/substrings.pl" failonerror="yes">
+                      <arg value="target/generated-resources/hyph_de_DE.dic" />
+                      <arg value="src/main/resources/tables/hyph_de_DE.dic" />
+                      <redirector output="/dev/null" />
+                    </exec>
+                    <exec executable="target/dependency/bin/${nar.aol}/substrings.pl" failonerror="yes">
+                      <arg value="target/generated-resources/hyph_de_DE_OLDSPELL.dic" />
+                      <arg value="src/main/resources/tables/hyph_de_DE_OLDSPELL.dic" />
+                      <redirector output="/dev/null" />
+                    </exec>
+                  </target>
+                </configuration>
+              </execution>
+            </executions>
+            <dependencies>
+              <dependency>
+                <groupId>org.daisy.bindings</groupId>
+                <artifactId>jhyphen</artifactId>
+                <version>${jhyphen.version}</version>
+              </dependency>
+              <dependency>
+                <groupId>commons-io</groupId>
+                <artifactId>commons-io</artifactId>
+                <version>${commons-io.version}</version>
+              </dependency>
+            </dependencies>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
 </project>

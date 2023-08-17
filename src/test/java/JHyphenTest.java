@@ -82,7 +82,7 @@ public class JHyphenTest {
 					public boolean accept(File dir, String fileName) {
 						return dir.getName().equals("shared") && fileName.startsWith("libhyphen"); }}),
 				trueFileFilter())).iterator().next());
-		hyphenator = new Hyphenator(new File(projectHome, "target/generated-resources/tables/hyph_de_DE.dic"));
+		hyphenator = new Hyphenator(new File(projectHome, "src/main/resources/tables/hyph_de_DE.dic"));
 	}
 	
 	@After

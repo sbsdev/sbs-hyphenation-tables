@@ -2,6 +2,10 @@
 <!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
 <properties>
     
+    <!--
+        Note that this mapping is not used at the moment.
+    -->
+    
     <comment>Mapping between language codes and libhyphen tables</comment>
     
     <entry key="de">hyph_de_DE.dic</entry>
