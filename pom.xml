@@ -30,7 +30,7 @@
   <properties>
     <hyphen.version>2.6.0</hyphen.version>
     <jhyphen.version>0.1.5</jhyphen.version>
-    <commons-io.version>2.2</commons-io.version>
+    <commons-io.version>2.14.0</commons-io.version>
     <tagNameFormat>v@{project.version}</tagNameFormat>
     <expose-services>
       org.daisy.pipeline.braille.libhyphen.impl.LibhyphenTablePath_http___www_sbs_ch_pipeline_hyphen_
